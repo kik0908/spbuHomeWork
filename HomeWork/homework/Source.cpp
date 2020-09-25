@@ -1,5 +1,6 @@
 #include <iostream>
 #include "windows.h"
+#include <cmath>  
 
 void translateTemp() {
 	double fs, ff, df;
@@ -20,17 +21,6 @@ void translateTemp() {
 	}
 
 	system("pause");
-}
-
-
-
-long double power(double x, int n) {
-	long double ans = 1;
-	for (int i = 0; i <= n; ++i) {
-		ans *= x;
-	}
-
-	return ans;
 }
 
 
@@ -129,13 +119,101 @@ void task5() {
 		sum += last;
 	}
 
-	std::cout << sum;
+	std::cout << "Sum is " << ' ' << sum << '\n';
+	std::cout << "Formula give answer is " << ' ' << 1.0 / (1.0 - x);
+	std::cout << "Eps is " << abs(1.0 / (1.0 - x)-sum);
+}
+
+void task6() {
+	std::cout << "Enter count of sinus and radians: ";
+	double radians, n;
+	std::cin >> n >> radians;
+	for (size_t i = 0; i < n; ++i) {
+		radians = sin(radians);
+	}
+	std::cout << radians;
+	
+}
+
+void task7() {
+	std::cout << "Input eps: ";
+	double eps, c, pi;
+	short d;
+	d = 1;
+	std::cin >> eps;
+	c = 1;
+	pi = 0;
+	while (1./c > eps) {
+		pi += (1. / c * d);
+		c += 2;
+		d *= -1;
+	}
+	pi *= 4.0;
+	std::cout << pi;
+}
+
+
+long double power(double x, int n) {
+	long double ans = 1;
+	for (int i = 0; i < n; ++i) {
+		ans *= x;
+	}
+
+	return ans;
+}
+
+size_t fact(size_t n) {
+	size_t ans = 1;
+	for (size_t i = 2; i <= n; ++i) {
+		ans *= i;
+	}
+	return ans;
+}
+
+//void task8() {
+//	size_t n, d;
+//	int  числитель, zn;
+//	double ans;
+//	int x;
+//	std::cin >> x >> n;
+//	d = 1;
+//	std::cout << "n  \tans\n";
+//	for (size_t i = 1; i <= n; i++) {
+//		числитель = power(x, 2 * i + 1);
+//		zn = fact(2 * n - 1);
+//		std::cout << i << '\t' << (double)числитель / zn * d << '\n';
+//		d *= -1;
+//	}
+//}
+
+
+void task9() {
+	size_t num;
+	bool byte;
+	size_t count = 0;
+	std::cin >> num;
+	while (num > 0) {
+		byte = num & 1;
+		if (byte == true) count += 1;
+		byte = false;
+		num >>= 1;
+	}
+	std::cout << count;
+}
+
+
+void task10(){
+	size_t num;
+	short razr;
+	std::cin >> num >> razr;
+	razr = razr % 32;
+	num = (num >> razr) | (num << ((32 - razr)%32));
+	std::cout << num;
 }
 
 
 int main() {
 
-	task4_2();
-
+	task10();
 	return 0;
 }
