@@ -40,10 +40,10 @@ void task3() {
 	size_t h;
 	std::cin >> h;
 	for (size_t i = 0; i < h; ++i) {
-		for (size_t j = 0; j < h-i-1; ++j) {
+		for (size_t j = 0; j < h - i - 1; ++j) {
 			std::cout << ' ';
 		}
-		for (size_t j = 0; j < i*2+1; ++j) {
+		for (size_t j = 0; j < i * 2 + 1; ++j) {
 			std::cout << '*';
 		}
 		std::cout << '\n';
@@ -61,7 +61,7 @@ void task4_1() {
 		for (size_t j = 0; j < abs((int)(h1 - i) - 1); ++j) {
 			std::cout << ' ';
 		}
-		for (int j = 0; j < 2*(h1 - abs((int)(h1 - i) - 1))-1; ++j) {
+		for (int j = 0; j < 2 * (h1 - abs((int)(h1 - i) - 1)) - 1; ++j) {
 			std::cout << '*';
 		}
 		std::cout << '\n';
@@ -84,7 +84,7 @@ void task4_2() {
 			std::cout << ' ';
 		}
 
-		if (i != 0 and i != h-1) std::cout << '*';
+		if (i != 0 and i != h - 1) std::cout << '*';
 		std::cout << '\n';
 	}
 }
@@ -121,7 +121,7 @@ void task5() {
 
 	std::cout << "Sum is " << ' ' << sum << '\n';
 	std::cout << "Formula give answer is " << ' ' << 1.0 / (1.0 - x);
-	std::cout << "Eps is " << abs(1.0 / (1.0 - x)-sum);
+	std::cout << "Eps is " << abs(1.0 / (1.0 - x) - sum);
 }
 
 void task6() {
@@ -132,7 +132,7 @@ void task6() {
 		radians = sin(radians);
 	}
 	std::cout << radians;
-	
+
 }
 
 void task7() {
@@ -143,7 +143,7 @@ void task7() {
 	std::cin >> eps;
 	c = 1;
 	pi = 0;
-	while (1./c > eps) {
+	while (1. / c > eps) {
 		pi += (1. / c * d);
 		c += 2;
 		d *= -1;
@@ -202,12 +202,13 @@ void task9() {
 }
 
 
-void task10(){
+void task10() {
 	size_t num;
 	short razr;
+	short b = sizeof(num)*8;
 	std::cin >> num >> razr;
-	razr = razr % 32;
-	num = (num >> razr) | (num << ((32 - razr)%32));
+	razr = razr % b;
+	num = (num >> razr) | (num << abs(((b - razr) % b)));
 	std::cout << num;
 }
 
@@ -215,5 +216,6 @@ void task10(){
 int main() {
 
 	task10();
+
 	return 0;
 }
