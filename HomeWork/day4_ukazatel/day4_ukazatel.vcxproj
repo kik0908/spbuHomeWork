@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{75ae3be9-0eb0-4ef2-8ff4-6d9a1eedce21}</ProjectGuid>
-    <RootNamespace>homework</RootNamespace>
+    <ProjectGuid>{297a1c62-9c53-464a-804f-179e42cf0189}</ProjectGuid>
+    <RootNamespace>day4ukazatel</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>day4_pointers</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
