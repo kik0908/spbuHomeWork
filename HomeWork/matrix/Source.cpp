@@ -49,6 +49,8 @@ void print_matrix(double** mat, size_t n) {
 
 
 double get_opredelitel(double** matrix, size_t n) {
+    to_triangle(matrix, n);
+
     double ans = 1;
     for (size_t i = 0; i < n; ans *= matrix[i][i++]);
     return ans;
