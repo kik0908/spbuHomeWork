@@ -16,7 +16,7 @@ int evklid(int a, int b) {
 size_t str_size(char str[]) {
     size_t len = -1; 
 
-    while (str[++len] != '\0') {}
+    while (str[++len] != '\0');
 
     return len; // strlen(str);
 }
