@@ -13,14 +13,12 @@ int evklid(int a, int b) {
     return a;
 }
 
-size_t str_size(char строка[]) {
-    size_t длина = 0; 
+size_t str_size(char str[]) {
+    size_t len = -1; 
 
-    while (строка[длина] != '\0') {
-        длина++; 
-    }
+    while (str[++len] != '\0') {}
 
-    return длина; // strlen(str);
+    return len; // strlen(str);
 }
 
 int str_to_int(char str[]) {
@@ -39,9 +37,9 @@ int str_to_int(char str[]) {
 
 int main() {
     std::cout << evklid(556, 1112) << '\n';
-    char a[] = "12";
+    char a[] = "12123";
     std::cout << str_size(a) << '\n';
-    std::cout << str_to_int(a) + 1 << '\n';
+    std::cout << str_to_int(a) << '\n';
 
     return 0;
 }
