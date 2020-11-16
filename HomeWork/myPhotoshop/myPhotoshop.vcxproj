@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{4663ef61-0761-462a-ab92-eb57f388b718}</ProjectGuid>
-    <RootNamespace>base64</RootNamespace>
+    <ProjectGuid>{a12c7621-4664-4675-904c-b8bec023d31c}</ProjectGuid>
+    <RootNamespace>myPhotoshop</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="base64.cpp" />
+    <ClCompile Include="ImgFunctions.cpp" />
+    <ClCompile Include="myPhotoshop.cpp" />
+    <ClCompile Include="utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BmpStructures.h" />
+    <ClInclude Include="ImgFunctions.h" />
+    <ClInclude Include="utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="kidsnoise.bmp" />
+    <Image Include="test.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
