@@ -150,7 +150,10 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="kidsnoise.bmp" />
+    <Image Include="not_work1.bmp" />
     <Image Include="test.bmp" />
+    <Image Include="test1.bmp" />
+    <Image Include="test2.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

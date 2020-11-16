@@ -4,16 +4,26 @@
 #include "utils.h"
 
 int main()
-{
-	RgbImg img = read_rgb_img("test.bmp");
+{	
+	char filename[] = "test5.bmp";
+
+	RgbImg img = read_rgb_img(filename);
+	create_noice(img, 400);
+	write_rgb_img("out.bmp", img);
+
 	RgbImg new_img = to_black_white_img(img);
 	write_rgb_img("out1.bmp", new_img);
 	delete[] new_img.pixels;
-	int arr[8] = { 8,4,5,1,3,2,3,7 };
-	sort_by_choice(8, arr);
-	for (size_t i = 0; i < 8; ++i) {
-		std::cout << arr[i];
-	}
+
+	
+
+	new_img = blur_filter(img, (size_t)1);
+	write_rgb_img("out2.bmp", new_img);
+	delete[] new_img.pixels;
+
+	new_img = median_filter(img, (size_t)1);
+	write_rgb_img("out3.bmp", new_img);
+
 
 	return 0;
 }
