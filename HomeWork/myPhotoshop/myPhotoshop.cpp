@@ -5,7 +5,7 @@
 
 int main()
 {	
-	char filename[] = "test5.bmp";
+	char filename[] = "test2.bmp";
 
 	RgbImg img = read_rgb_img(filename);
 	create_noice(img, 400);
