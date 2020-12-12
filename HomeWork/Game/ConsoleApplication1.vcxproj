@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{a12c7621-4664-4675-904c-b8bec023d31c}</ProjectGuid>
-    <RootNamespace>myPhotoshop</RootNamespace>
+    <ProjectGuid>{3098d4cf-d9de-4f18-ac07-179e526b46ad}</ProjectGuid>
+    <RootNamespace>ConsoleApplication1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Game</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -139,21 +140,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ImgFunctions.cpp" />
-    <ClCompile Include="myPhotoshop.cpp" />
-    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="ConsoleApplication1.cpp" />
+    <ClCompile Include="units.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BmpStructures.h" />
-    <ClInclude Include="ImgFunctions.h" />
-    <ClInclude Include="utils.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="kidsnoise.bmp" />
-    <Image Include="not_work1.bmp" />
-    <Image Include="test.bmp" />
-    <Image Include="test1.bmp" />
-    <Image Include="test2.bmp" />
+    <ClInclude Include="game.h" />
+    <ClInclude Include="render.h" />
+    <ClInclude Include="units.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

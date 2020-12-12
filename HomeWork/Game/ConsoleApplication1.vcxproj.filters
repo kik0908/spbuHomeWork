@@ -15,42 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="myPhotoshop.cpp">
+    <ClCompile Include="ConsoleApplication1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ImgFunctions.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="utils.cpp">
+    <ClCompile Include="units.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ImgFunctions.h">
+    <ClInclude Include="units.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BmpStructures.h">
+    <ClInclude Include="game.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="utils.h">
+    <ClInclude Include="render.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="kidsnoise.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="test.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="test1.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="test2.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="not_work1.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
   </ItemGroup>
 </Project>
