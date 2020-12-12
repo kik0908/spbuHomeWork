@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{a12c7621-4664-4675-904c-b8bec023d31c}</ProjectGuid>
-    <RootNamespace>myPhotoshop</RootNamespace>
+    <ProjectGuid>{ba063463-7d1c-4308-b218-aab00d42cef8}</ProjectGuid>
+    <RootNamespace>Sorts</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,21 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ImgFunctions.cpp" />
-    <ClCompile Include="myPhotoshop.cpp" />
-    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BmpStructures.h" />
-    <ClInclude Include="ImgFunctions.h" />
+    <ClInclude Include="sorts.h" />
     <ClInclude Include="utils.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="kidsnoise.bmp" />
-    <Image Include="not_work1.bmp" />
-    <Image Include="test.bmp" />
-    <Image Include="test1.bmp" />
-    <Image Include="test2.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
